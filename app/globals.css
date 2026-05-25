@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-deep: #0A0A0F;
+    --bg-surface: #141428;
+    --accent-primary-start: #6C3CE1;
+    --accent-primary-end: #8B5CF6;
+    --accent-cyan: #00D4FF;
+    --cta-red: #E50914;
+    --text-primary: #FFFFFF;
+    --text-secondary: #B3B3B3;
+  }
+
+  body {
+    background-color: var(--bg-deep);
+    color: var(--text-primary);
+  }
+}
+
+@layer components {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
